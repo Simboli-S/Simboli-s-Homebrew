@@ -3,14 +3,14 @@
 		"sources": [
 			{
 				"json": "SimbolisHomebrew",
-				"abbreviation": "SH",
-				"full": "Simboli's Homebrew",
+				"abbreviation": "SHS",
+				"full": "Simboli's Homebrews",
 				"version": "1.0",
 				"authors": [
 					"Simboli"
 				],
 				"convertedBy": [
-					"SImboli"
+					"Simboli"
 				],
 				"color": "e1b504"
 			}
