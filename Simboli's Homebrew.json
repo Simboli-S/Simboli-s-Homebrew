@@ -1,0 +1,541 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SimbolisHomebrew",
+				"abbreviation": "SH",
+				"full": "Simboli's Homebrew",
+				"version": "1.0",
+				"authors": [
+					"Simboli"
+				],
+				"convertedBy": [
+					"SImboli"
+				],
+				"color": "e1b504"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Senatore Horat",
+			"isNamedCreature": true,
+			"source": "SimbolisHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 25,
+					"from": [
+						"Natural Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "34d8 + 204",
+				"average": 357
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 22,
+			"con": 22,
+			"int": 22,
+			"wis": 22,
+			"cha": 22,
+			"save": {
+				"str": "+11",
+				"dex": "+12",
+				"con": "+12",
+				"cha": "+12"
+			},
+			"skill": {
+				"deception": "+12",
+				"investigation": "+12",
+				"religion": "+12",
+				"athletics": "+11"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"cold",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "18",
+			"trait": [
+				{
+					"name": "Formless Shape",
+					"entries": [
+						"Horat is immune to any spell or effect that would alter his form."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Horat fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Horat has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Horat's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Mutation Field",
+					"entries": [
+						"Horat emits an unholy aura of distortion. Each creature that starts its turn within 30 feet of him has its speed reduced to 10 feet as its limbs develop extra joints and its feet splay into talons or tentacles until the start of the target's next turn."
+					]
+				},
+				{
+					"name": "True Name",
+					"entries": [
+						"The true name of Horat is not fixed. It is made up of the syllables VEN, THU, and ZJA. There are six permutations of the name, depending on how you order the syllables, but only one permutation is correct during a given battle.  Speaking the True Name as an Action forces Horat to make a {@dc 25} Wisdom saving throw. On a failure, he is {@condition stunned} until the end of his next turn."
+					]
+				},
+				{
+					"name": "Unhallowed Toxin",
+					"entries": [
+						"Poison damage dealt by Horat ignores any damage immunity or resistance the target has. Furthermore, Horat can inflict the {@condition poisoned} condition on creatures that are otherwise immune to it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Horat makes four melee attacks and uses his Twist Flesh."
+					]
+				},
+				{
+					"name": "Mouth Hand",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 14 ({@damage 4d6}) poison damage, and if the target is Large or smaller, it is {@condition grappled} (escape {@dc 21}). While {@condition grappled}, the target is {@condition restrained}.",
+						"Whenever Horat makes this attack, he can grow as many limbs as required to grapple multiple targets at once."
+					]
+				},
+				{
+					"name": "Venomous Bayonet",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}22({@damage 2d8 + 10}) piercing damage plus 18 ({@damage 5d8}) poison damage, and the target must succeed on a {@dc 21} Constitution saving throw or become {@condition poisoned}."
+					]
+				},
+				{
+					"name": "Hail of Teeth {@recharge 5}",
+					"entries": [
+						"A barrage of teeth erupts from Horat in a 60-foot cone. Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 45 ({@damage 8d10}) piercing damage plus 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Allow Me to Improve You",
+					"entries": [
+						"When a creature starts its turn in Horat's Mutation Field, he can use his Twist Flesh on that creature."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Horat has three villain actions. He can take each action once during an encounter after an enemy creature's turn."
+			],
+			"legendary": [
+				{
+					"name": "Gambe Bislunghe",
+					"entries": [
+						"Horat moves up to his full movement speed without provoking opportunity attacks, and then makes two melee attacks."
+					]
+				},
+				{
+					"name": "Tutto è uno",
+					"entries": [
+						"The range of Horat's Mutation Field becomes 60 feet. Within this area, the speed of any hostile creature is halved. Additionally, when a creature starts its turn in the field or enters it for the first time on a turn, it must succeed on a {@dc 25} Constitution saving throw. On a failed save, the creature cannot use verbal or somatic components. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Litania del dolore",
+					"entries": [
+						"Horat chants an exaltation of suffering, afflicting enemies within 120 feet of him that can hear him with relentless agony. Enemy spellcasters lose {@status concentration} on any ongoing spells they are casting, and all enemy creatures must succeed on a {@dc 25} Constitution saving throw or become {@condition stunned} until the end of Horat's next turn. Creatures with the {@condition poisoned} condition automatically fail this saving throw."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"TP"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"dazed",
+				"deafened",
+				"grappled",
+				"poisoned",
+				"restrained",
+				"stunned"
+			],
+			"bonus": [
+				{
+					"name": "Twist Flesh",
+					"entries": [
+						"Horat targets a creature he can see within 60 feet. That creature must succeed on a {@dc 21} Constitution saving throw or become {@condition poisoned} as it suffers a sudden monstrous transformation that wracks its body with unimaginable pain as bones writhe beneath skin and muscles fill with acid.",
+						"While {@condition poisoned} in this way, a creature also suffers a random secondary effect:",
+						{
+							"type": "list",
+							"items": [
+								"The target's internal temperature skyrockets, boiling its bodily fluids, which hiss from its pores as jets of steam. The target gains a level of {@condition exhaustion}.",
+								"Horns erupt from the target's skull, curving into its eyes. The target is {@condition blinded}.",
+								"Pus-filled boils form and pop in the target's ears. The target is {@condition deafened}.",
+								"The target's muscles burst, weakening it. All the target's weapon attacks deal half damage.",
+								"The soles of the target's feet fuse with the ground, tearing with every move it makes. The target is {@condition restrained}.",
+								"The target's skeleton writhes beneath its skin, hardening into stone. The target is {@condition dazed}."
+							]
+						},
+						"The {@condition poisoned} condition can be ended by a {@spell lesser restoration} spell or by finishing a long rest, but levels of {@condition exhaustion} can only be removed by a {@spell greater restoration} spell or by finishing a long rest."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Horat magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see."
+					]
+				}
+			],
+			"environment": [
+				"ribcage",
+				"baator"
+			],
+			"page": "-Ribcage",
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"poisoned"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution"
+			],
+			"legendaryGroup": {
+				"name": "Horat-Lair-Action",
+				"source": "SimbolisHomebrew"
+			},
+			"fluff": {
+				"entries": [
+					"L'ultimo senatore di Ribcage, che insieme al senatore Indix ha avuto la brillante intuizione di usare ciò che c'è nel sottosuolo di Ribcage in modo ben più ambizioso di come la Duchessa lo farebbe"
+				]
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dante, The Chronolich",
+			"isNamedCreature": true,
+			"source": "SimbolisHomebrew",
+			"page": "-Bishot Kataku",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 304,
+				"formula": "32d8 + 160"
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 50
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 20,
+			"int": 27,
+			"wis": 21,
+			"cha": 22,
+			"save": {
+				"con": "+12",
+				"int": "+15",
+				"wis": "+12"
+			},
+			"skill": {
+				"arcana": "+15",
+				"history": "+15",
+				"perception": "+12",
+				"religion": "+15"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 22,
+			"resist": [
+				"acid",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": "23",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Dante fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Dante has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Temporal Nexus",
+					"entries": [
+						"Time bends strangely around Dante, causing stress to the living. When a creature that is not undead moves within 60 feet of Dante for the first time on a turn or starts its turn within 60 feet of him, that creature must succeed on a {@dc 20} Constitution saving throw or gain a level of {@condition exhaustion}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dante makes one Stasis Touch attack and one Leeching Blast attack. He can replace one of these attacks with his Borrowed Time or his Lost in Time actions."
+					]
+				},
+				{
+					"name": "Stasis Touch",
+					"entries": [
+						"{@atk ms} {@hit 15} to hit, reach 5 ft., one target. {@h}21 ({@damage 6d6}) force damage. The target must succeed on a {@dc 20} Constitution saving throw or become {@condition paralyzed} for 1 round. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Leeching Blast",
+					"entries": [
+						"{@atk rs} {@hit 15} to hit, range 120 ft., one target. {@h}21 ({@damage 6d6}) necrotic damage. Dante recovers hit points equal to the damage taken by the target."
+					]
+				},
+				{
+					"name": "Borrowed Time {@recharge 5}",
+					"entries": [
+						"Dante steals time from one creature he can see within 120 feet of him. The target must make a {@dc 20} Constitution saving throw, taking 65 ({@damage 10d12}) necrotic damage on a failed save, or half as much damage on a successful one. If the target fails the save, it also ages a number of years equal to the damage dealt. Dante regains hit points equal to the damage dealt. If Dante's body is destroyed, the aging effect is reversed."
+					]
+				},
+				{
+					"name": "Lost in Time {@recharge 5}",
+					"entries": [
+						"Dante banishes one creature he can see within 60 feet of him to a ripple in time (demiplane) for 10 minutes. While there, the target is {@condition unconscious}, lost in a vivid dream of a divergent timeline. The target can use its action to attempt to come back. When it does so, it makes a {@dc 20} Investigation check. On a success, it returns to the material plane. When the target returns, it reappears in the space it left, or if that space is occupied, in the nearest unoccupied space."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Warp Step",
+					"entries": [
+						"When an attack would hit Dante, he can warp time and cause the attack to miss. The attacker must succeed on a {@dc 20} Constitution saving throw or be cursed with warp sickness. The cursed target gains a level of {@condition exhaustion} and can't regain hit points. The creature no longer benefits from the effects of a long rest and gains another level of {@condition exhaustion} every 24 hours. The curse lasts until removed by the {@spell remove curse} spell or similar magic or until Dante's body is destroyed."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Dante has three villain actions. He can take each action once during an encounter after an enemy creature's turn."
+			],
+			"legendary": [
+				{
+					"name": "Sands of Time",
+					"entries": [
+						"An affected target's Speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a 25 percent chance the spell fails as a result of the target making the spell's gestures too slowly.",
+						"An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success."
+					]
+				},
+				{
+					"name": "Compress Infinity",
+					"entries": [
+						"Dante chooses four points within 150 feet of him. Each creature in a 20-foot-radius sphere centered on those points must make a {@dc 20} Dexterity saving throw, taking 42 ({@damage 12d6}) force damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Final Countdown",
+					"entries": [
+						"Dante expels a portion of his own time to destroy others, cutting his remaining hit points in half. All creatures that are not constructs or undead within 60 feet of Dante must make a {@dc 20} Constitution saving throw. On a failed save, a target takes 65 ({@damage 10d12}) necrotic damage and rapidly ages until it is {@dice 1d6} days away from death by old age. On a successful save, a target takes half as much necrotic damage and ages {@dice 1d10} years. While {@dice 1d6} days away from death, the creature has disadvantage on all attack rolls, ability checks, and saving throws, and its movement speed is halved. If Dante's body is destroyed, the target regains the years lost by this effect."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"miscTags": [
+				"MA",
+				"RA",
+				"CUR",
+				"AOE"
+			],
+			"conditionInflict": [
+				"exhaustion",
+				"paralyzed",
+				"unconscious"
+			],
+			"bonus": [
+				{
+					"name": "Stolen Moments",
+					"entries": [
+						"As a bonus action, Dante steals precious seconds from one creature he can see. On the target's next turn, it can either move, use an action, or use a bonus action; it can only use one, not all three. Once a creature has been affected by this ability, it is immune to the effects of Dante's Stolen Moments for the next 24 hours. Each time Dante uses this ability, he gains an additional 10 feet of movement. Dante retains this additional movement for the next 24 hours."
+					]
+				}
+			],
+			"shortName": "Dante",
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"name": "Horat-Lair-Action",
+			"source": "SimbolisHomebrew",
+			"page": 225,
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Horat can take one lair action to cause the following effect; he can't take the same lair action two rounds in a row:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fiery Reversal",
+							"entries": [
+								"Horat exchanges places with a creature he can see within 30 feet of him. Both his old location and his new location erupt into flames that persist for 1 minute. Anyone entering either flame must succeed on a {@dc 22} Constitution saving throw or take 28 ({@damage 8d6}) fire damage."
+							]
+						}
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Cleansing Flame",
+							"entries": [
+								"Horat selects one spell effect on himself or a creature of his choice within 60 feet. That spell effect is removed."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
