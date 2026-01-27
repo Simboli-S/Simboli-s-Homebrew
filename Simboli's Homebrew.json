@@ -44,7 +44,7 @@
 			],
 			"hp": {
 				"formula": "34d8 + 204",
-				"average": 357
+				"average": 666
 			},
 			"speed": {
 				"walk": 40
@@ -113,27 +113,21 @@
 					]
 				},
 				{
-					"name": "Magic Weapons",
-					"entries": [
-						"Horat's weapon attacks are magical."
-					]
-				},
-				{
 					"name": "Mutation Field",
 					"entries": [
 						"Horat emits an unholy aura of distortion. Each creature that starts its turn within 30 feet of him has its speed reduced to 10 feet as its limbs develop extra joints and its feet splay into talons or tentacles until the start of the target's next turn."
 					]
 				},
 				{
-					"name": "True Name",
-					"entries": [
-						"The true name of Horat is not fixed. It is made up of the syllables VEN, THU, and ZJA. There are six permutations of the name, depending on how you order the syllables, but only one permutation is correct during a given battle.  Speaking the True Name as an Action forces Horat to make a {@dc 25} Wisdom saving throw. On a failure, he is {@condition stunned} until the end of his next turn."
-					]
-				},
-				{
 					"name": "Unhallowed Toxin",
 					"entries": [
 						"Poison damage dealt by Horat ignores any damage immunity or resistance the target has. Furthermore, Horat can inflict the {@condition poisoned} condition on creatures that are otherwise immune to it."
+					]
+				},
+				{
+					"name": "Fiendish Regeneration.",
+					"entries": [
+						"Belial regains 20 hit points at the start of his turn. If he takes radiant damage this trait doesn't function at the start of his next turn. Belial dies only if he starts his turn with 0 hit points and doesn't regenerate."
 					]
 				}
 			],
@@ -147,7 +141,7 @@
 				{
 					"name": "Mouth Hand",
 					"entries": [
-						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 14 ({@damage 4d6}) poison damage, and if the target is Large or smaller, it is {@condition grappled} (escape {@dc 21}). While {@condition grappled}, the target is {@condition restrained}.",
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}24 ({@damage 4d6 + 10}) piercing damage plus 14 ({@damage 4d6}) poison damage, and if the target is Large or smaller, it is {@condition grappled} (escape {@dc 21}). While {@condition grappled}, the target is {@condition restrained}.",
 						"Whenever Horat makes this attack, he can grow as many limbs as required to grapple multiple targets at once."
 					]
 				},
@@ -269,26 +263,28 @@
 				"frightened",
 				"poisoned"
 			],
-			"savingThrowForcedLegendary": [
-				"constitution"
-			],
 			"legendaryGroup": {
 				"name": "Horat-Lair-Action",
 				"source": "SimbolisHomebrew"
 			},
 			"fluff": {
 				"entries": [
-					"L'ultimo senatore di Ribcage, che insieme al senatore Indix ha avuto la brillante intuizione di usare ciò che c'è nel sottosuolo di Ribcage in modo ben più ambizioso di come la Duchessa lo farebbe"
+					"L'ultimo senatore di Ribcage, che insieme al senatore Indix ha avuto la brillante intuizione di usare ciò che c'è nel sottosuolo di Ribcage in modo ben più ambizioso di come la Duchessa lo farebbe."
 				]
 			},
 			"damageTags": [
 				"I",
 				"P"
 			],
+			"damageTagsLegendary": [
+				"F"
+			],
 			"savingThrowForced": [
 				"constitution",
-				"dexterity",
-				"wisdom"
+				"dexterity"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution"
 			]
 		},
 		{
