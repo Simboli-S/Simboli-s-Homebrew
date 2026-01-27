@@ -154,7 +154,7 @@
 				{
 					"name": "Hail of Teeth {@recharge 5}",
 					"entries": [
-						"A barrage of teeth erupts from Horat in a 60-foot cone. Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 45 ({@damage 8d10}) piercing damage plus 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+						"A barrage of teeth erupts from Horat in a 60-foot cone. Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 110 ({@damage 20d10}) piercing damage plus 39 ({@damage 6d12}) poison damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
