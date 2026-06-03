@@ -1,0 +1,2111 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SimbolisHomebrew",
+        "abbreviation": "SHS",
+        "full": "Simboli's Homebrews",
+        "version": "1.0",
+        "authors": [
+          "Simboli"
+        ],
+        "convertedBy": [
+          "Simboli"
+        ],
+        "color": "e1b504"
+      }
+    ]
+  },
+  "monster": [
+    {
+      "name": "Senatore Horat",
+      "isNamedCreature": true,
+      "source": "SimbolisHomebrew",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "devil"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 25,
+          "from": [
+            "Natural Armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "34d8 + 204",
+        "average": 666
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 20,
+      "dex": 22,
+      "con": 22,
+      "int": 22,
+      "wis": 22,
+      "cha": 22,
+      "save": {
+        "str": "+11",
+        "dex": "+12",
+        "con": "+12",
+        "cha": "+12"
+      },
+      "skill": {
+        "deception": "+12",
+        "investigation": "+12",
+        "religion": "+12",
+        "athletics": "+11"
+      },
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "passive": 18,
+      "resist": [
+        "cold",
+        "lightning",
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ]
+        }
+      ],
+      "immune": [
+        "fire",
+        "necrotic",
+        "poison"
+      ],
+      "languages": [
+        "Common",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "cr": "18",
+      "trait": [
+        {
+          "name": "Formless Shape",
+          "entries": [
+            "Horat is immune to any spell or effect that would alter his form."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If Horat fails a saving throw, he can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "Horat has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Mutation Field",
+          "entries": [
+            "Horat emits an unholy aura of distortion. Each creature that starts its turn within 30 feet of him has its speed reduced to 10 feet as its limbs develop extra joints and its feet splay into talons or tentacles until the start of the target's next turn."
+          ]
+        },
+        {
+          "name": "Unhallowed Toxin",
+          "entries": [
+            "Poison damage dealt by Horat ignores any damage immunity or resistance the target has. Furthermore, Horat can inflict the {@condition poisoned} condition on creatures that are otherwise immune to it."
+          ]
+        },
+        {
+          "name": "Fiendish Regeneration.",
+          "entries": [
+            "Belial regains 20 hit points at the start of his turn. If he takes radiant damage this trait doesn't function at the start of his next turn. Belial dies only if he starts his turn with 0 hit points and doesn't regenerate."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Horat makes four melee attacks and uses his Twist Flesh."
+          ]
+        },
+        {
+          "name": "Mouth Hand",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}24 ({@damage 4d6 + 10}) piercing damage plus 14 ({@damage 4d6}) poison damage, and if the target is Large or smaller, it is {@condition grappled} (escape {@dc 21}). While {@condition grappled}, the target is {@condition restrained}.",
+            "Whenever Horat makes this attack, he can grow as many limbs as required to grapple multiple targets at once."
+          ]
+        },
+        {
+          "name": "Venomous Bayonet",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}22({@damage 2d8 + 10}) piercing damage plus 18 ({@damage 5d8}) poison damage, and the target must succeed on a {@dc 21} Constitution saving throw or become {@condition poisoned}."
+          ]
+        },
+        {
+          "name": "Hail of Teeth {@recharge 5}",
+          "entries": [
+            "A barrage of teeth erupts from Horat in a 60-foot cone. Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 110 ({@damage 20d10}) piercing damage plus 39 ({@damage 6d12}) poison damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Allow Me to Improve You",
+          "entries": [
+            "When a creature starts its turn in Horat's Mutation Field, he can use his Twist Flesh on that creature."
+          ]
+        }
+      ],
+      "legendaryHeader": [
+        "Horat has three villain actions. He can take each action once during an encounter after an enemy creature's turn."
+      ],
+      "legendary": [
+        {
+          "name": "Gambe Bislunghe",
+          "entries": [
+            "Horat moves up to his full movement speed without provoking opportunity attacks, and then makes two melee attacks."
+          ]
+        },
+        {
+          "name": "Tutto è uno",
+          "entries": [
+            "The range of Horat's Mutation Field becomes 60 feet. Within this area, the speed of any hostile creature is halved. Additionally, when a creature starts its turn in the field or enters it for the first time on a turn, it must succeed on a {@dc 25} Constitution saving throw. On a failed save, the creature cannot use verbal or somatic components. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        },
+        {
+          "name": "Litania del dolore",
+          "entries": [
+            "Horat chants an exaltation of suffering, afflicting enemies within 120 feet of him that can hear him with relentless agony. Enemy spellcasters lose {@status concentration} on any ongoing spells they are casting, and all enemy creatures must succeed on a {@dc 25} Constitution saving throw or become {@condition stunned} until the end of Horat's next turn. Creatures with the {@condition poisoned} condition automatically fail this saving throw."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Legendary Resistances",
+        "Magic Resistance",
+        "Magic Weapons"
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Teleport"
+      ],
+      "languageTags": [
+        "C",
+        "I",
+        "TP"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "dazed",
+        "deafened",
+        "grappled",
+        "poisoned",
+        "restrained",
+        "stunned"
+      ],
+      "bonus": [
+        {
+          "name": "Twist Flesh",
+          "entries": [
+            "Horat targets a creature he can see within 60 feet. That creature must succeed on a {@dc 21} Constitution saving throw or become {@condition poisoned} as it suffers a sudden monstrous transformation that wracks its body with unimaginable pain as bones writhe beneath skin and muscles fill with acid.",
+            "While {@condition poisoned} in this way, a creature also suffers a random secondary effect:",
+            {
+              "type": "list",
+              "items": [
+                "The target's internal temperature skyrockets, boiling its bodily fluids, which hiss from its pores as jets of steam. The target gains a level of {@condition exhaustion}.",
+                "Horns erupt from the target's skull, curving into its eyes. The target is {@condition blinded}.",
+                "Pus-filled boils form and pop in the target's ears. The target is {@condition deafened}.",
+                "The target's muscles burst, weakening it. All the target's weapon attacks deal half damage.",
+                "The soles of the target's feet fuse with the ground, tearing with every move it makes. The target is {@condition restrained}.",
+                "The target's skeleton writhes beneath its skin, hardening into stone. The target is {@condition dazed}."
+              ]
+            },
+            "The {@condition poisoned} condition can be ended by a {@spell lesser restoration} spell or by finishing a long rest, but levels of {@condition exhaustion} can only be removed by a {@spell greater restoration} spell or by finishing a long rest."
+          ]
+        },
+        {
+          "name": "Teleport",
+          "entries": [
+            "Horat magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see."
+          ]
+        }
+      ],
+      "environment": [
+        "ribcage",
+        "baator"
+      ],
+      "page": "-Ribcage",
+      "tokenHref": {
+        "type": "external",
+        "url": ""
+      },
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "frightened",
+        "poisoned"
+      ],
+      "legendaryGroup": {
+        "name": "Horat-Lair-Action",
+        "source": "SimbolisHomebrew"
+      },
+      "fluff": {
+        "entries": [
+          "L'ultimo senatore di Ribcage, che insieme al senatore Indix ha avuto la brillante intuizione di usare ciò che c'è nel sottosuolo di Ribcage in modo ben più ambizioso di come la Duchessa lo farebbe."
+        ]
+      },
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "damageTagsLegendary": [
+        "F"
+      ],
+      "savingThrowForced": [
+        "constitution",
+        "dexterity"
+      ],
+      "savingThrowForcedLegendary": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Leopold",
+      "source": "SimbolisHomebrew",
+      "page": "C4M",
+      "referenceSources": [
+        "DrDe",
+        "FRAiF",
+        "FRHoF",
+        "HBTD"
+      ],
+      "size": [
+        "M"
+      ],
+      "type": "monstrosity",
+      "alignment": [
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item smoldering studded leather armor|xdmg}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d8 + 72",
+        "average": 220
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 11,
+      "dex": 20,
+      "con": 18,
+      "int": 18,
+      "wis": 16,
+      "cha": 14,
+      "skill": {
+        "deception": "+10",
+        "insight": "+7",
+        "perception": "+7",
+        "stealth": "+9"
+      },
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "passive": 17,
+      "conditionImmune": [
+        "charmed"
+      ],
+      "languages": [
+        "Common",
+        "Common Sign Language",
+        "Thieves' cant"
+      ],
+      "cr": "10",
+      "spellcasting": [
+        {
+          "name": "Read Thoughts",
+          "headerEntries": [
+            "The doppelganger casts {@spell Detect Thoughts|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 16})."
+          ],
+          "displayAs": "action",
+          "hidden": [
+            "will"
+          ],
+          "will": [
+            "{@spell Detect Thoughts|XPHB}"
+          ],
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The doppelganger makes three Psionic Pistol attacks or uses Synaptic Granade if available."
+          ]
+        },
+        {
+          "name": "Psionic Pistol",
+          "entries": [
+            "Melee or {@atkr rw} {@hit +10}, range 120 ft., one target. {@h}11 ({@damage 1d10 + 5}) + {@h}7 ({@damage 2d6}) psychic damage."
+          ]
+        },
+        {
+          "name": "Synaptic Granade {@recharge 4}",
+          "entries": [
+            "{@actSave con} {@dc 17} You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking ({@damage 8d8}) Psychic damage on a failed save or half as much damage on a successful one. On a failed save, a target also can't use reaction until the start of his next turn."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Shape-Shift",
+          "entries": [
+            "The doppelganger shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+          ]
+        },
+        {
+          "name": "Shadow Step",
+          "entries": [
+            "While in dim light or darkness, Leopold can teleport up to 60 feet to an unoccupied space that is also in dim light or darkness. Leopold then has advantage on the first melee or ranged attack it makes before the end of its turn."
+          ]
+        }
+      ],
+      "environment": [
+        "urban",
+        "border kingdoms"
+      ],
+      "treasure": [
+        "individual"
+      ],
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/doppelganger.opus"
+      },
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C",
+        "TC"
+      ],
+      "spellcastingTags": [
+        "O"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "token": {
+        "name": "Doppelganger",
+        "source": "XMM"
+      },
+      "fluff": {
+        "name": "Doppelganger",
+        "source": "XMM",
+        "entries": [
+          {
+            "type": "section",
+            "name": "Doppelganger",
+            "entries": [
+              "{@i Shape-Shifting Infiltrator}",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Habitat:",
+                    "entry": "{@filter Underdark|bestiary|environment=underdark}, {@filter Urban|bestiary|environment=urban}"
+                  },
+                  {
+                    "type": "item",
+                    "name": "Treasure:",
+                    "entry": "Individual"
+                  }
+                ]
+              },
+              "Doppelgangers are supernatural beings with the ability to shape-shift into any humanlike form. Their mind-reading abilities aid them in creating near-perfect disguises and plucking secrets from unguarded minds. Occasionally, doppelgangers use their shape-shifting ability in more overt ways, transforming into unsettling forms to frighten foes.",
+              "A doppelganger's agenda might relate to its mysterious magical origins or to more mercenary goals. Roll on or choose a result from the Doppelganger Deceptions table to inspire a doppelganger's plot.",
+              {
+                "type": "table",
+                "caption": "Doppelganger Deceptions",
+                "colLabels": [
+                  "1d6",
+                  "The Doppelganger Schemes To..."
+                ],
+                "colStyles": [
+                  "col-2 text-center",
+                  "col-10"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "Cause chaos within the temple of a deity that cursed it to live without a true form."
+                  ],
+                  [
+                    "2",
+                    "Conceal evidence of a vast conspiracy."
+                  ],
+                  [
+                    "3",
+                    "Control a community through fear by posing as a legendary bogeyman."
+                  ],
+                  [
+                    "4",
+                    "Replace a noble to enjoy a decadent lifestyle."
+                  ],
+                  [
+                    "5",
+                    "Spy on wizards to learn how to complete its own botched magical creation."
+                  ],
+                  [
+                    "6",
+                    "Take an influential position, acting as a sleeper agent for a doppelganger invasion."
+                  ]
+                ]
+              },
+              {
+                "type": "insetReadaloud",
+                "entries": [
+                  {
+                    "type": "quote",
+                    "entries": [
+                      "Meeting yourself is the surest way to realize you're not as charming as you think you are."
+                    ],
+                    "by": "Someone claiming to be Lorhirin of Fearchor Keep"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/XMM/Doppelganger.webp"
+            },
+            "credit": "Sean Murray",
+            "width": 1220,
+            "height": 1582
+          }
+        ]
+      },
+      "save": {
+        "wis": "+7",
+        "int": "+8",
+        "dex": "+9"
+      },
+      "resist": [
+        "psychic"
+      ],
+      "traitTags": [
+        "Sneak Attack"
+      ],
+      "trait": [
+        {
+          "name": "Sneak Attack",
+          "entries": [
+            "Once per turn, Leopold deals an extra 14 ({@damage 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the leopold that isn't {@condition incapacitated} and the leopold doesn't have disadvantage on the attack roll."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Uncanny Dodge",
+          "entries": [
+            "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+          ]
+        }
+      ],
+      "gear": [
+        {
+          "item": "smoldering studded leather armor",
+          "quantity": 1,
+          "displayName": "Armatura"
+        }
+      ],
+      "miscTags": [
+        "RW",
+        "RNG",
+        "AOE"
+      ],
+      "damageTags": [
+        "Y"
+      ],
+      "savingThrowForced": [
+        "constitution"
+      ],
+      "savingThrowForcedSpell": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Sehr",
+      "isNpc": true,
+      "isNamedCreature": true,
+      "source": "SimbolisHomebrew",
+      "page": 265,
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human",
+          "wizard"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 214,
+        "formula": "33d8 + 66"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "initiative": {
+        "proficiency": 1
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 14,
+      "int": 23,
+      "wis": 15,
+      "cha": 16,
+      "save": {
+        "int": "+11",
+        "wis": "+7"
+      },
+      "skill": {
+        "arcana": "+11",
+        "history": "+11",
+        "insight": "+7"
+      },
+      "senses": [
+        "Truesight 60 ft."
+      ],
+      "passive": 12,
+      "immune": [
+        "psychic"
+      ],
+      "conditionImmune": [
+        "charmed"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "Infernal",
+        "Undercommon"
+      ],
+      "cr": "13",
+      "gear": [
+        "component pouch|xphb"
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Sehr casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 19}):"
+          ],
+          "displayAs": "action",
+          "will": [
+            "{@spell Darkness|XPHB}",
+            "{@spell Detect Magic|XPHB}",
+            "{@spell Detect Thoughts|XPHB}",
+            "{@spell Mage Armor|XPHB} (included in AC)",
+            "{@spell Mage Hand|XPHB}",
+            "{@spell Prestidigitation|XPHB}"
+          ],
+          "daily": {
+            "2e": [
+              "{@spell Dominate Person|XPHB}",
+              "{@spell Glyph of Warding|XPHB}",
+              "{@spell Scrying|XPHB}",
+              "{@spell Sending|XPHB}",
+              "{@spell Wall of Force|XPHB}"
+            ],
+            "1e": [
+              "{@spell Befuddlement|XPHB}",
+              "{@spell Clone|XPHB}",
+              "{@spell Maddening Darkness|XGE}",
+              "{@spell Mind Blank|XPHB} (cast before combat)",
+              "{@spell Simulacrum|XPHB}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Protective Magic",
+          "headerEntries": [
+            "Sehr casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+          ],
+          "displayAs": "reaction",
+          "hidden": [
+            "will"
+          ],
+          "will": [
+            "{@spell Counterspell|XPHB}",
+            "{@spell Shield|XPHB}"
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "Sehr has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Sehr makes three Arcane Burst attacks. He can replace two attacks with a use of Spellcasting."
+          ]
+        },
+        {
+          "name": "Arcane Burst",
+          "entries": [
+            "{@atkr m,r} {@hit 11}, reach 5 ft., or range 120 ft. {@h}32 ({@damage 4d12 + 6}) Necrotic damage."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C",
+        "DR",
+        "I",
+        "U"
+      ],
+      "spellcastingTags": [
+        "O"
+      ],
+      "miscTags": [
+        "RA",
+        "MA"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "token": {
+        "name": "Manshoon",
+        "source": "FRAiF"
+      },
+      "fluff": {
+        "name": "Manshoon",
+        "source": "FRAiF",
+        "entries": [
+          {
+            "type": "section",
+            "name": "Manshoon",
+            "entries": [
+              "{@i Evil Wizard of Duplicity and Duplication}",
+              "Manshoon is an evil, arrogant wizard who was an instrumental founder of the Zhentarim centuries ago. That Manshoon is dead, and the current Manshoon is one of the original's many clones. Being a magical copy rather than an original doesn't make Manshoon any less of a threat, as he's amassed magical skill and political influence he uses for his own gain. Manshoon considers the Zhentarim to be only one tool to amass personal power, and he casually sacrifices minions once they've outlived their usefulness. Manshoon doesn't care who suffers so long he's able to crush his many enemies and force his subjects into paranoid and eager obedience."
+            ]
+          },
+          {
+            "type": "section",
+            "entries": [
+              {
+                "type": "entries",
+                "name": "History",
+                "entries": [
+                  "The original Manshoon was the undisputed lord of Zhentil Keep, where he honed the organization to suit his sinister will. He encouraged members to report on each other, punished discontent, and hoarded magical knowledge and personal secrets. The Zhentarim wouldn't have become the organization it is today—one where treachery and subterfuge are the order of the day—without Manshoon's formative influence.",
+                  "Manshoon made many enemies and sought to preserve his power by crafting several clones. A magical accident decades ago caused all his clones to activate at once and fight against one another in a devastating conflict called the Manshoon Wars. The original Manshoon and all but three of his clones were killed, and today only a single Manshoon is believed to be active in Faerûn. Manshoon subtly cultivates this belief to keep his true forces hidden.",
+                  "Manshoon seems to be a young man, but he is significantly older than he appears, and his mind harbors the skills and knowledge of an even older version of himself. One of Manshoon's enemies, Halaster Blackcloak, removed Manshoon's left arm at the elbow. Manshoon now uses a mechanical prosthetic arm."
+                ]
+              },
+              {
+                "type": "entries",
+                "name": "Personality",
+                "entries": [
+                  "The Manshoon of today retains all his progenitor's arrogance and duplicity. Manshoon keeps several other clones at hand to activate if necessary. He also employs the Simulacrum spell to duplicate himself, his allies, and even his rivals. Manshoon knows that keeping people guessing about hidden identities makes them easier to manipulate.",
+                  "Manshoon usually wears a mask and concealing robes when meeting with others, even with loyal lieutenants and the Zhentarim's inner circle. Even his allies aren't sure when they're meeting with the actual Manshoon, a clone, or someone else in disguise, which is just as Manshoon prefers.",
+                  "Manshoon seeks power and is checked only by the many enemies who want to see him dead. He recently failed to seize control of Waterdeep in a clandestine coup. It's widely believed he's turned his attentions elsewhere, but another Manshoon clone lurks in that city, manipulating the Zhentarim behind the scenes to amass sufficient power to assault Undermountain and face his old enemy, Halaster."
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/FRAiF/Manshoon.webp"
+            },
+            "width": 1000,
+            "height": 646
+          }
+        ]
+      },
+      "resist": [
+        "cold",
+        "necrotic"
+      ],
+      "bonus": [
+        {
+          "name": "Shadow Step.",
+          "entries": [
+            "While in dim light or darkness, Sehr can teleport up to 60 feet to an unoccupied space that is also in dim light or darkness. Sehr then has advantage on the first melee or ranged attack it makes before the end of its turn."
+          ]
+        }
+      ],
+      "damageTags": [
+        "N"
+      ],
+      "damageTagsSpell": [
+        "A",
+        "C",
+        "F",
+        "L",
+        "T",
+        "Y"
+      ],
+      "savingThrowForcedSpell": [
+        "constitution",
+        "dexterity",
+        "intelligence",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Ethantra, First Mage",
+      "source": "SimbolisHomebrew",
+      "page": 260,
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid"
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        13,
+        {
+          "ac": 16,
+          "condition": "with {@spell mage armor}",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "formula": "16d8 + 48",
+        "average": 120
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 9,
+      "dex": 16,
+      "con": 16,
+      "int": 20,
+      "wis": 12,
+      "cha": 11,
+      "save": {
+        "int": "+9",
+        "wis": "+5"
+      },
+      "skill": {
+        "arcana": "+9",
+        "history": "+9",
+        "investigation": "+9"
+      },
+      "passive": 11,
+      "cr": "10",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The abjurer casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 16}):"
+          ],
+          "displayAs": "action",
+          "will": [
+            "{@spell dancing lights}",
+            "{@spell mage hand}",
+            "{@spell message}",
+            "{@spell prestidigitation}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell Counterspell|XPHB}",
+              "{@spell dispel magic}",
+              "{@spell mage armor}",
+              "{@spell Misty Step|XPHB}",
+              "{@spell Shield|XPHB}"
+            ],
+            "2e": [
+              "{@spell Alarm|XPHB}",
+              "{@spell Arcane Lock|XPHB}",
+              "{@spell Glyph of Warding|XPHB}",
+              "{@spell Otiluke's Resilient Sphere|XPHB}",
+              "{@spell Wall of Force|XPHB}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The abjurer makes three Arcane Burst attacks."
+          ]
+        },
+        {
+          "name": "Arcane Burst",
+          "entries": [
+            "{@atk ms,rs} {@hit 9} to hit, reach 5 ft. or range 120 ft., one target. {@h}21 ({@damage 3d10 + 5}) force damage."
+          ]
+        },
+        {
+          "name": "Force Blast",
+          "entries": [
+            "Each creature in a 20-foot cube originating from the abjurer must make a {@dc 17} Constitution saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) force damage and is pushed up to 10 feet away from the abjurer. On a successful save, a creature takes half as much damage and isn't pushed."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Arcane Ward {@recharge 4}",
+          "entries": [
+            "When Ethantra or a creature she can see within 30 feet of her takes damage, she magically creates a protective barrier around herself or the other creature. The barrier reduces the damage to the protected creature by 26 ({@damage 4d10 + 4}), to a minimum of 0. If the source of the damage was a melee attack made by a creature within 5 feet of the protected target, the attacker is pushed 10 feet away in a straight line as the ward detonates and vanishes."
+          ]
+        }
+      ],
+      "environment": [
+        "urban"
+      ],
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/abjurer.opus"
+      },
+      "actionTags": [
+        "Multiattack"
+      ],
+      "spellcastingTags": [
+        "O"
+      ],
+      "miscTags": [
+        "RA",
+        "MA",
+        "AOE"
+      ],
+      "conditionInflictSpell": [
+        "incapacitated",
+        "invisible"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "token": {
+        "name": "Abjurer Wizard",
+        "source": "MPMM"
+      },
+      "fluff": {
+        "name": "Abjurer Wizard",
+        "source": "MPMM",
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MPMM/Abjurer Wizard.webp"
+            },
+            "credit": "Zoltan Boros",
+            "width": 849,
+            "height": 545
+          }
+        ],
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              "Abjurers specialize in creating protective magical wards. Monarchs, nobles, and other wealthy individuals commonly hire abjurers to provide protection."
+            ]
+          },
+          {
+            "type": "section",
+            "name": "Wizards",
+            "entries": [
+              "Wizards pursue magical power through the study of arcane texts. Some travel the world searching for esoteric tomes while others train lesser wizards or collaborate with colleagues to create new spells."
+            ]
+          }
+        ]
+      },
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The ethantra has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "Elvish",
+        "Dwarvish"
+      ],
+      "languageTags": [
+        "C",
+        "DR",
+        "E",
+        "D"
+      ],
+      "damageTags": [
+        "O"
+      ],
+      "damageTagsSpell": [
+        "A",
+        "C",
+        "F",
+        "L",
+        "T"
+      ],
+      "savingThrowForced": [
+        "constitution"
+      ],
+      "savingThrowForcedSpell": [
+        "constitution",
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Beloume's Simulacrum",
+      "source": "SimbolisHomebrew",
+      "page": "C4M",
+      "referenceSources": [
+        "DrDe",
+        "EFA",
+        "FRAiF",
+        "FRHoF",
+        "LFL",
+        "NF",
+        "UtHftLH"
+      ],
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "construct",
+        "tags": [
+          "wizard"
+        ]
+      },
+      "alignment": [
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "Mage Armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d8 + 54",
+        "average": 80
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 16,
+      "con": 16,
+      "int": 20,
+      "wis": 14,
+      "cha": 12,
+      "save": {
+        "int": "+8",
+        "wis": "+5"
+      },
+      "skill": {
+        "arcana": "+8",
+        "history": "+8",
+        "perception": "+5",
+        "insight": "+5"
+      },
+      "passive": 15,
+      "cr": "8",
+      "gear": [
+        "component pouch|xphb",
+        "clockwork amulet|xdmg"
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The mage casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 14}):"
+          ],
+          "displayAs": "action",
+          "will": [
+            "{@spell Detect Magic|XPHB}",
+            "{@spell Light|XPHB}",
+            "{@spell Mage Armor|XPHB} (included in AC)",
+            "{@spell Mage Hand|XPHB}",
+            "{@spell Prestidigitation|XPHB}"
+          ],
+          "daily": {
+            "2e": [
+              "{@spell Dispel Magic|XPHB}",
+              "{@spell Fireball|XPHB}",
+              "{@spell Invisibility|XPHB}"
+            ],
+            "1e": [
+              "{@spell Banishment|XPHB}",
+              "{@spell Wall of Fire|XPHB}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Misty Step (3/Day)",
+          "headerEntries": [
+            "The mage casts {@spell Misty Step|XPHB}, using the same spellcasting ability as Spellcasting."
+          ],
+          "displayAs": "bonus",
+          "hidden": [
+            "daily"
+          ],
+          "daily": {
+            "3": [
+              "{@spell Misty Step|XPHB}"
+            ]
+          },
+          "type": "spellcasting"
+        },
+        {
+          "name": "Protective Magic (3/Day)",
+          "headerEntries": [
+            "The mage casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+          ],
+          "displayAs": "reaction",
+          "hidden": [
+            "daily"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell Counterspell|XPHB}",
+              "{@spell Shield|XPHB}"
+            ]
+          },
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The mage makes three Arcane Burst attacks. She can replace one of these attacks with a use of her Spellcasting."
+          ]
+        },
+        {
+          "name": "Arcane Burst",
+          "entries": [
+            "{@atkr m,r} {@hit 8}, reach 5 ft. or range 120 ft. {@h}16 ({@damage 3d8 + 5}) Force damage. If the target is a creature, its speed is reduced by 10 feet until the start of Beloume's next turn."
+          ]
+        }
+      ],
+      "environment": [
+        "any"
+      ],
+      "treasure": [
+        "arcana",
+        "individual"
+      ],
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/mage.opus"
+      },
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "spellcastingTags": [
+        "O"
+      ],
+      "miscTags": [
+        "RA",
+        "MA"
+      ],
+      "conditionInflictSpell": [
+        "invisible"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "token": {
+        "name": "Mage",
+        "source": "XMM"
+      },
+      "fluff": {
+        "name": "Mage",
+        "source": "XMM",
+        "entries": [
+          {
+            "type": "section",
+            "entries": [
+              "Mages are accomplished spellcasters whose lives have been shaped by magic. They can use their powers to defend or dominate other creatures, or they could focus on magical research and unlocking mystical secrets."
+            ]
+          },
+          {
+            "type": "section",
+            "name": "Mages",
+            "entries": [
+              "{@i Magical Scholars and Spellcasters}",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Habitat:",
+                    "entry": "{@filter Any|bestiary|environment=any}"
+                  },
+                  {
+                    "type": "item",
+                    "name": "Treasure:",
+                    "entry": "{@table Random Magic Items - Arcana|XDMG|Arcana}, Individual"
+                  }
+                ]
+              },
+              "Mages are magical wonder-workers, ranging from spellcasting overlords to reclusive witches. They study mystical secrets and possess insight into monsters, legends, omens, and other lore. Mages often gather allies or hire assistants to aid them in their research or to attain magical might.",
+              "Roll on or choose a result from the Mage Roles table to inspire different sorts of mages.",
+              {
+                "type": "table",
+                "caption": "Mage Roles",
+                "colLabels": [
+                  "1d10",
+                  "The Mage Is..."
+                ],
+                "colStyles": [
+                  "col-2 text-center",
+                  "col-10"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "An astronomer who draws magic from stars."
+                  ],
+                  [
+                    "2",
+                    "An author who writes about the occult."
+                  ],
+                  [
+                    "3",
+                    "A magical engineer who creates wonders."
+                  ],
+                  [
+                    "4",
+                    "An oracle who interprets omens."
+                  ],
+                  [
+                    "5",
+                    "A prodigy with a remarkable magical heritage."
+                  ],
+                  [
+                    "6",
+                    "A psion whose powers manifest as spells."
+                  ],
+                  [
+                    "7",
+                    "A scholar investigating ancient lore."
+                  ],
+                  [
+                    "8",
+                    "A soothsayer who advises rulers."
+                  ],
+                  [
+                    "9",
+                    "A war mage who aids soldiers in battle."
+                  ],
+                  [
+                    "10",
+                    "A witch who shares secret wisdom."
+                  ]
+                ]
+              },
+              {
+                "type": "insetReadaloud",
+                "entries": [
+                  {
+                    "type": "quote",
+                    "entries": [
+                      "Have you gazed on the Runes of Chaos, held the Death Moon Orb in your trembling hands, entered the Devouring Portal and walked the Paths of the Doomed, or sat at the left hand of Szass Tam during the Ritual of Twin Burnings? No? Then speak not to me of wizards. Speak not to me of Thay."
+                    ],
+                    "by": "Nathor, Thayan Refugee"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/XMM/Mages.webp"
+            },
+            "credit": "Viko Menezes",
+            "width": 2560,
+            "height": 1772
+          }
+        ]
+      },
+      "languages": [
+        "Common",
+        "Draconic",
+        "Sylvan",
+        "Elvish"
+      ],
+      "languageTags": [
+        "C",
+        "DR",
+        "S",
+        "E"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "resist": [
+        "radiant"
+      ],
+      "trait": [
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "The beloume's simulacrum has advantage on saving throws against being {@condition charmed}, and magic can't put the beloume's simulacrum to sleep."
+          ]
+        },
+        {
+          "name": "Sunburst Mantle",
+          "entries": [
+            "Beloume weaves ancient sun magic into her defensive wards. Whenever a creature within 5 feet of her hits her with a melee attack, the attacker takes 5 ({@damage 1d10}) radiant damage."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Fey Ancestry"
+      ],
+      "bonus": [
+        {
+          "name": "Sun-Step {@recharge 4}",
+          "entries": [
+            "Beloume magically teleports, along with any equipment she is wearing or carrying, up to 30 feet to an unoccupied space she can see. When she appears, a flash of golden light bursts from her; all creatures within 5 feet of her new location must succeed on a {@dc 16} Constitution saving throw or be {@condition blinded} until the end of her current turn."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "damageTags": [
+        "O",
+        "R"
+      ],
+      "damageTagsSpell": [
+        "F"
+      ],
+      "savingThrowForced": [
+        "constitution"
+      ],
+      "savingThrowForcedSpell": [
+        "charisma",
+        "constitution",
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Zo'Ryal the Censor",
+      "isNamedCreature": true,
+      "source": "SimbolisHomebrew",
+      "page": 170,
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "15d10 + 60",
+        "average": 142
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 60,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "resource": [
+        {
+          "name": "Souls",
+          "value": 7,
+          "formula": "3d4"
+        }
+      ],
+      "str": 16,
+      "dex": 20,
+      "con": 18,
+      "int": 14,
+      "wis": 16,
+      "cha": 14,
+      "save": {
+        "int": "+6",
+        "dex": "+9"
+      },
+      "skill": {
+        "perception": "+7",
+        "stealth": "+9",
+        "investigation": "+6"
+      },
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "passive": 17,
+      "resist": [
+        "cold",
+        "fire",
+        "lightning"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "stunned"
+      ],
+      "languages": [
+        "Abyssal",
+        "Common"
+      ],
+      "cr": "10",
+      "trait": [
+        {
+          "name": "Abyssal Resistance (Costs 1 Soul)",
+          "entries": [
+            "If Zor'yal fails a saving throw, she can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Lacerate (Costs 1-2 Souls)",
+          "entries": [
+            "When Zor'yal takes the Attack action on her turn, she can burn up to 3 souls and make an additional weapon attack for each soul burnt."
+          ]
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "entries": [
+            "Zor'yal deals an extra 14 ({@damage 4d6}) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of hers that isn't incapacitated and Zor'yal doesn't have disadvantage on the attack roll."
+          ]
+        },
+        {
+          "name": "Wounding Mist",
+          "entries": [
+            "As a brass or silver standard, Zor'yal can project a dark cloak. As long as Zor'yal's soul count is 2 or higher, she is cloaked by blood-soaked clouds of mist. The mist extends a distance of 10 feet from Zor'yal. This area is heavily obscured, and demons within the mist (including Zor'yal) are hidden and {@condition invisible} to soulsight. The mist moves with Zor'yal and can't be dispelled by any magical or nonmagical means. Zor'yal can see through the mist."
+          ]
+        },
+        {
+          "name": "Wounding Step (Costs 2 Souls)",
+          "entries": [
+            "As a bonus action, Zor'yal can teleport to an unoccupied space she can see within 90 feet of her. Her teleportation is accompanied by a cacophony of screams, and immediately after she disappears, each creature within 10 feet of the space she left must make a {@dc 16} Wisdom saving throw, taking 9 ({@damage 2d8}) psychic damage on a failed save, or half as much on a successful one. A creature who failed the saving throw can't regain hit points until the start of Zor'yal's next turn."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Venomous Claw",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage plus 9 ({@damage 2d8}) poison damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Weakening Mist (Costs 1 Soul)",
+          "entries": [
+            "When Zor'yal is hit with an attack, she can use her reaction to halve the attack's damage against her. If the attack was a critical hit, it becomes a normal hit."
+          ]
+        }
+      ],
+      "legendaryHeader": [
+        "Zor'yal has three villain actions. She can take each action once during an encounter after an enemy creature's turn. She takes villain action 1 during the first round of combat, villain action 2 during the second round, and villain action 3 during the third round."
+      ],
+      "legendary": [
+        {
+          "name": "Villain Action 1: Boiling Blood",
+          "entries": [
+            "With a wet hiss, the blood-stained clouds of her Wounding Mist grow even larger. Until Zor'yal uses another villain action, the mist has a radius of 30 feet. In addition, each non-demon creature that begins its turn within the mist must succeed on a {@dc 16} Constitution saving throw or take 11 ({@damage 2d10}) fire damage."
+          ]
+        },
+        {
+          "name": "Villain Action 2: Baleful Teleport",
+          "entries": [
+            "Zor'yal chooses up to four creatures within 30 feet of her that she can see. Each chosen creature must succeed on a {@dc 16} Charisma saving throw or take 11 ({@damage 2d10}) psychic damage and be teleported to unoccupied space of Zor'yal's choice within 30 feet of her."
+          ]
+        },
+        {
+          "name": "Villain Action 3: Bane of the Lifeswallower",
+          "entries": [
+            "Tendrils of brackish ichor lash out from Zor'yal. She chooses up to three creatures that she can see within 120 feet of her. Each creature must make a {@dc 19} Constitution saving throw, taking 52 ({@damage 8d12}) poison damage on a failed save, or half as much damage on a successful one. The creature's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0, and Zor'yal automatically consumes its soul."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Sneak Attack"
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "languageTags": [
+        "AB",
+        "C"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE",
+        "HPR"
+      ],
+      "damageTags": [
+        "F",
+        "I",
+        "P",
+        "Y"
+      ],
+      "savingThrowForced": [
+        "charisma",
+        "constitution",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Yarthag, the Twisted",
+      "source": "SimbolisHomebrew",
+      "page": 21,
+      "size": [
+        "L"
+      ],
+      "type": "fiend",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "condition": "(Crow Mantle)"
+        }
+      ],
+      "hp": {
+        "formula": "24d10 + 96",
+        "average": 228
+      },
+      "speed": {
+        "walk": 40
+      },
+      "initiative": {
+        "proficiency": 2
+      },
+      "str": 20,
+      "dex": 16,
+      "con": 18,
+      "int": 22,
+      "wis": 20,
+      "cha": 24,
+      "skill": {
+        "deception": "+13",
+        "persuasion": "+13",
+        "arcana": "+12",
+        "perception": "+11"
+      },
+      "senses": [
+        "Truesight 60 ft."
+      ],
+      "passive": 21,
+      "resist": [
+        "cold",
+        "fire",
+        "psychic"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "languages": [
+        "all"
+      ],
+      "cr": "17",
+      "spellcasting": [
+        {
+          "name": "Coven Magic",
+          "headerEntries": [
+            "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save {@dc 19}): {@spell Augury|XPHB}, {@spell Find Familiar|XPHB}, {@spell Identify|XPHB}, {@spell Locate Object|XPHB}, {@spell Scrying|XPHB}, or {@spell Unseen Servant|XPHB}. The hag must finish a {@variantrule Long Rest|XPHB} before using this trait to cast that spell again."
+          ],
+          "hidden": [
+            "restLong"
+          ],
+          "restLong": {
+            "1": [
+              "{@spell Augury|XPHB}",
+              "{@spell Find Familiar|XPHB}",
+              "{@spell Identify|XPHB}",
+              "{@spell Locate Object|XPHB}",
+              "{@spell Scrying|XPHB}",
+              "{@spell Unseen Servant|XPHB}"
+            ]
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The hag casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 22}):"
+          ],
+          "displayAs": "action",
+          "will": [
+            "{@spell Detect Thoughts|XPHB}",
+            "{@spell Dimension Door|XPHB}",
+            "{@spell Dispel Magic|XPHB}",
+            "{@spell Hypnotic Pattern|XPHB}"
+          ],
+          "daily": {
+            "2e": [
+              "{@spell Alter Self|XPHB}",
+              "{@spell Mass Suggestion|XPHB}",
+              "{@spell Modify Memory|XPHB}",
+              "{@spell Plane Shift|XPHB}"
+            ],
+            "1e": [
+              "{@spell Dream|XPHB}",
+              "{@spell Etherealness|XPHB}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        },
+        {
+          "name": "Tongue Twister",
+          "headerEntries": [
+            "The hag casts {@spell Counterspell|XPHB} in response to that spell's trigger, using the same spellcasting ability as Spellcasting. If the target fails its saving throw, it is cursed until the end of its next turn. Until the curse ends, the target can't cast spells with a Verbal component, and when it speaks, it says the opposite of what it means."
+          ],
+          "displayAs": "reaction",
+          "hidden": [
+            "will"
+          ],
+          "will": [
+            "{@spell Counterspell|XPHB}"
+          ],
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the hag fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The hag has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Spiteful Escape",
+          "entries": [
+            "When the hag drops to 0 {@variantrule Hit Points|XPHB}, it dies only if it is within 30 feet of its anathema (a thing the DM chooses as the hag's most hated thing). Otherwise, the hag drops to 1 {@variantrule Hit Points|XPHB|Hit Point} and teleports to a harmless demiplane, and it can't return to the plane it left for {@dice 2d6} days. When the hag teleports away, each creature within 60 feet of the space it left is cursed. Until the curse ends, a creature has {@variantrule Disadvantage|XPHB} on ability checks and saving throws, and the hag knows its location anywhere in the multiverse."
+          ]
+        },
+        {
+          "name": "Thousand Hands",
+          "entries": [
+            "Yarthag is surrounded by six floating spectral hands of different colors. They allow him to: (1) use Interact with an Object as a free Bonus Action; (2) perform somatic spell components even if both hands are occupied; (3) use his Spectral Parry reaction."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hag makes two Spectral Claw attacks and uses Crackling Wave."
+          ]
+        },
+        {
+          "name": "Spectral Claw",
+          "entries": [
+            "{@atkr m,r} {@hit 11}, reach 10 ft. or range 60 ft. {@h}18 ({@damage 3d6 + 8}) Force damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        },
+        {
+          "name": "Crackling Wave",
+          "entries": [
+            "{@actSave dex} {@dc 19}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 33 ({@damage 6d10}) Lightning damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target is cursed until the end of the hag's next turn. The target can't take Reactions until the curse ends."
+          ]
+        },
+        {
+          "name": "Staff of Ancient Wisdom (1/Short Rest)",
+          "entries": [
+            "Yarthag strikes the ground with his staff. Each creature within 30 feet must succeed on a {@actSave wis} {@dc 20} or be {@condition Stunned|XPHB} until the end of its next turn. Creatures already cursed by Yarthag have Disadvantage on this save."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Witch Strike",
+          "entries": [
+            "Each creature cursed by the hag and within 60 feet of it takes 18 ({@damage 4d8}) Lightning damage."
+          ]
+        },
+        {
+          "name": "Crow Mantle (3/Day)",
+          "entries": [
+            "As a Bonus Action, Yarthag can cast Misty Step without expending a spell slot. When he does, each creature within 10 feet must succeed on a {@actSave dex} {@dc 18} or take {@damage 2d6} piercing damage from a burst of razor-winged crows."
+          ]
+        }
+      ],
+      "legendaryActionsLair": 4,
+      "legendary": [
+        {
+          "name": "Hag's Swipe (1 use)",
+          "entries": [
+            "The hag makes one Spectral Claw attack."
+          ]
+        },
+        {
+          "name": "Malicious Magic (1 use)",
+          "entries": [
+            "The hag uses Spellcasting to cast {@spell Dimension Door|XPHB} or {@spell Hypnotic Pattern|XPHB}. The hag can't take this action again until the start of its next turn."
+          ]
+        },
+        {
+          "name": "Poisoned Counsel (3 uses)",
+          "entries": [
+            "Yarthag whispers to one cursed creature within 60 feet that can hear him. The creature must succeed on a {@dc 20} WIS saving throw or use its Reaction to make its best available turn against the nearest ally it can see."
+          ]
+        }
+      ],
+      "legendaryGroup": {
+        "name": "Yarthag, the Twisted",
+        "source": "SimbolisHomebrew"
+      },
+      "environment": [
+        "any"
+      ],
+      "treasure": [
+        "arcana"
+      ],
+      "traitTags": [
+        "Legendary Resistances",
+        "Magic Resistance"
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "XX"
+      ],
+      "spellcastingTags": [
+        "O"
+      ],
+      "miscTags": [
+        "RA",
+        "MA",
+        "RCH",
+        "AOE",
+        "CUR"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "conditionInflictSpell": [
+        "charmed",
+        "incapacitated"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "save": {
+        "dex": "+9",
+        "int": "+12",
+        "cha": "+13",
+        "wis": "+11"
+      },
+      "reaction": [
+        {
+          "name": "Spectral Parry.",
+          "entries": [
+            "When Yarthag is hit by an attack, one of his spectral hands intercepts the blow. He reduces the damage by {@dice 1d10 + 6}. If the damage is reduced to 0, the hand is destroyed and he loses this Reaction until he finishes a Short Rest."
+          ]
+        }
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": ""
+      },
+      "damageTags": [
+        "L",
+        "O"
+      ],
+      "damageTagsSpell": [
+        "B",
+        "O",
+        "P",
+        "S",
+        "Y"
+      ],
+      "savingThrowForced": [
+        "dexterity",
+        "wisdom"
+      ],
+      "savingThrowForcedSpell": [
+        "constitution",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Yarthag the Twisted",
+      "source": "Custom",
+      "page": 1,
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "Night Megero"
+        ]
+      },
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "24d8 + 120",
+        "average": 228
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 20,
+      "dex": 15,
+      "con": 20,
+      "int": 18,
+      "wis": 16,
+      "cha": 18,
+      "save": {
+        "con": "+10",
+        "int": "+9",
+        "wis": "+8",
+        "cha": "+9"
+      },
+      "skill": {
+        "deception": "+9",
+        "insight": "+8",
+        "perception": "+8",
+        "stealth": "+7"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 18,
+      "resist": [
+        "cold",
+        "fire",
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "charmed"
+      ],
+      "languages": [
+        "Abyssal",
+        "Common",
+        "Infernal",
+        "Primordial"
+      ],
+      "cr": "16",
+      "trait": [
+        {
+          "name": "Rhyming Verbiage",
+          "entries": [
+            "Yarthag channels magic exclusively through twisted rhymes. To cast any spell with a verbal component, he must recite an appropriate rhyme. While {@condition silenced}, he cannot cast such spells."
+          ]
+        },
+        {
+          "name": "Legendary Resistances (3/Day)",
+          "entries": [
+            "If Yarthag fails a saving throw, he can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "Yarthag has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Yarthag's Coven Magic",
+          "entries": [
+            "While within 30 ft. of at least two hag or megero allies, Yarthag can cast one of the following spells (no material components, Intelligence-based, DC 17) once per long rest each: {@spell augury}, {@spell find familiar}, {@spell identify}, {@spell locate object}, {@spell scrying}, or {@spell unseen servant}."
+          ]
+        },
+        {
+          "name": "Soul Bag",
+          "entries": [
+            "Yarthag carries a soul bag (AC 15, 20 HP, resistance to all damage). While holding it, he can use his Nightmare Haunting action. If destroyed, all trapped souls are released; Yarthag can craft a new bag after 7 days."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Yarthag makes three Claw attacks. He can replace one with a use of Embrace of the Twisted Hands or an at-will spell."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}14 (2d8 + 5) slashing damage plus 14 (4d6) necrotic damage."
+          ]
+        },
+        {
+          "name": "Embrace of the Twisted Hands",
+          "entries": [
+            "One Large or smaller creature within 10 ft. must succeed on a DC 16 Strength or Dexterity saving throw or become {@condition grappled} (escape DC 16). While grappled, the target is {@condition restrained} and takes 7 (2d6) necrotic damage at the start of each of its turns. Yarthag can have up to two creatures grappled simultaneously, but cannot make Claw attacks against restrained targets. The hand used determines an additional effect for the duration of the grapple:",
+            {
+              "type": "list",
+              "items": [
+                "{\\i Violet Hand.} The target is also {@condition frightened} of Yarthag.",
+                "{\\i Gray Hand.} The target is also {@condition poisoned}.",
+                "{\\i Red Hand.} The target takes an additional 7 (2d6) fire damage at the start of each of its turns."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nightmare Haunting (1/Day; requires Soul Bag)",
+          "entries": [
+            "While on the Ethereal Plane, Yarthag casts {@spell dream} (DC 17) on a visible target on the Material Plane. Damage dealt reduces the target's hit point maximum by the same amount. If the maximum reaches 0, the target dies and its soul is trapped in the Soul Bag. This fails if the target is protected by {@spell protection from evil and good} or a {@spell magic circle}."
+          ]
+        },
+        {
+          "name": "Spellcasting",
+          "entries": [
+            "Yarthag casts one of the following spells (no material components, Intelligence-based, save DC 17, +9 to hit):",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                "{\\b At will:} {@spell detect magic}, {@spell magic missile} (as a 3rd-level spell)",
+                "{\\b 2/day each:} {@spell phantasmal killer}, {@spell plane shift} (self only), {@spell dispel magic}",
+                "{\\b 1/day:} {@spell finger of death}"
+              ]
+            }
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Shape-Shift",
+          "entries": [
+            "Yarthag transforms into a Small or Medium Humanoid, or reverts to his true form. His statistics remain the same. Equipment he is wearing or carrying is not transformed."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Feather Shroud (3/Day)",
+          "entries": [
+            "When Yarthag takes damage, his raven-feather cloak erupts outward, absorbing the impact. He reduces the damage taken by 12 (2d6 + 5)."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Rend",
+          "entries": [
+            "Yarthag makes one Claw attack."
+          ]
+        },
+        {
+          "name": "Quick Spell (Costs 2 Actions)",
+          "entries": [
+            "Yarthag casts an at-will spell from his Spellcasting trait."
+          ]
+        },
+        {
+          "name": "Curse of Verses (Costs 2 Actions)",
+          "entries": [
+            "Yarthag utters a rhyming hex at a creature he can see within 60 ft. The target must succeed on a DC 17 Wisdom saving throw or take 21 (6d6) psychic damage and become {@condition frightened} of Yarthag until the end of its next turn."
+          ]
+        },
+        {
+          "name": "Nightmare Step (Costs 2 Actions)",
+          "entries": [
+            "Yarthag becomes {@condition invisible} until the end of his next turn and teleports up to 30 ft. to an unoccupied space he can see."
+          ]
+        }
+      ],
+      "legendaryHeader": [
+        "Yarthag can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time, and only at the end of another creature's turn. Yarthag regains spent legendary actions at the start of his turn."
+      ]
+    }
+  ],
+  "legendaryGroup": [
+    {
+      "name": "Horat-Lair-Action",
+      "source": "SimbolisHomebrew",
+      "page": 225,
+      "lairActions": [
+        "On initiative count 20 (losing initiative ties), Horat can take one lair action to cause the following effect; he can't take the same lair action two rounds in a row:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Fiery Reversal",
+              "entries": [
+                "Horat exchanges places with a creature he can see within 30 feet of him. Both his old location and his new location erupt into flames that persist for 1 minute. Anyone entering either flame must succeed on a {@dc 22} Constitution saving throw or take 28 ({@damage 8d6}) fire damage."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Cleansing Flame",
+              "entries": [
+                "Horat selects one spell effect on himself or a creature of his choice within 60 feet. That spell effect is removed."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yarthag, the Twisted",
+      "source": "SimbolisHomebrew",
+      "page": 20,
+      "regionalEffects": [
+        "The region containing an Yarthag lair is altered by its presence, creating the following effects:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Voices in the Dark",
+              "entries": [
+                "Creatures within 1 mile of the lair have Disadvantage on saving throws against Enchantment and Illusion spells."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Invisible Hands",
+              "entries": [
+                "Each time a creature finishes a Long Rest within 1 mile of the lair, it must succeed on a DC 18 WIS saving throw or lose a random memory from the last 24 hours (DM's discretion)"
+              ]
+            }
+          ]
+        },
+        "If the arch-hag is destroyed or moves its lair elsewhere, these effects end immediately."
+      ]
+    }
+  ]
+}
