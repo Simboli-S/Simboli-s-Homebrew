@@ -23,6 +23,210 @@
 	},
 	"monster": [
 		{
+	"name": "Modronzilla",
+	"group": [
+		"Modron Constructs"
+	],
+	"source": "HelianasGuidetoMonsterHunting",
+	"page": 564,
+	"size": [
+		"G"
+	],
+	"type": "construct",
+	"alignment": [
+		"L",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 27,
+			"from": [
+				"natural armor"
+			],
+			"condition": "but see Ablative Gear-Plating"
+		}
+	],
+	"hp": {
+		"average": 310,
+		"formula": "20d20 + 100"
+	},
+	"speed": {
+		"walk": {
+			"number": 20,
+			"condition": "but see Ablative Gear-Plating"
+		},
+		"burrow": 20
+	},
+	"str": 23,
+	"dex": 5,
+	"con": 21,
+	"int": 10,
+	"wis": 10,
+	"cha": 18,
+	"save": {
+		"str": "+13",
+		"con": "+12",
+		"cha": "+11"
+	},
+	"senses": [
+		"blindsight 120 ft."
+	],
+	"passive": 10,
+	"immune": [
+		"fire",
+		"poison"
+	],
+	"conditionImmune": [
+		"blinded",
+		"charmed",
+		"deafened",
+		"exhaustion",
+		"frightened",
+		"paralysed",
+		"petrified",
+		"poisoned",
+		"stunned"
+	],
+	"cr": "21",
+	"trait": [
+		{
+			"name": "Axiomatic Override (Recharges after a Short or Long Rest)",
+			"entries": [
+				"If the modronzilla would be reduced to 0 hit points, its current hit point total instead resets to 310 hit points, it recharges its Axiomatic Steam Breath, its Dexterity increases to 27 (+8), and its Intelligence, Wisdom, and Charisma increase to 18 (+4). Additionally, all internal monodrone operators are melted down to fuel its core, it can't use its Monodrone Deployment legendary action until it finishes a short or long rest, and the modronzilla can use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 33,000 XP (66,000 XP total) for defeating the modronzilla after its Axiomatic Override activates."
+			]
+		},
+		{
+			"name": "Constructed Weakness",
+			"entries": [
+				"The modronzilla has the following flaws:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Clockwork Engine",
+							"entry": "If the modronzilla takes 20 or more cold damage in a single turn, its gears freeze slightly and it can't recharge its Axiomatic Steam Breath action until the end of its next turn."
+						},
+						{
+							"type": "item",
+							"name": "Rustable Gears",
+							"entry": "If the modronzilla takes 20 or more acid damage in a single turn, its joints corrode and it becomes restrained until the end of its next turn."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Immutable Form",
+			"entries": [
+				"The modronzilla is immune to any spell or effect that would alter its form."
+			]
+		},
+		{
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If the modronzilla fails a saving throw, it can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Ablative Gear-Plating",
+			"entries": [
+				"When the modronzilla is reduce to 165 hit points or fewer for the first time since it last finished a long rest, it sheds its heavy outer cogs and plates to maintain operational efficiency. Its AC is reduced to 19, its walking speed is doubled, and its Dexterity increases to 20 (+5). These effects last until it finishes a long rest."
+			]
+		},
+		{
+			"name": "Siege Monster",
+			"entries": [
+				"The modronzilla deals double damage to objects and structures."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The modronzilla makes two attacks: one with its Piston Stomp and one with its Clockwork Pendulum."
+			]
+		},
+		{
+			"name": "Piston Stomp",
+			"entries": [
+				"{@atk mw} {@hit 13} to hit, reach 10 ft., each target within a 5-foot-radius circle. {@h}20 ({@damage 4d6 + 6}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Clockwork Pendulum",
+			"entries": [
+				"{@atk mw} {@hit 13} to hit, reach 20 ft., one target. {@h}24 ({@damage 4d8 + 6}) slashing damage."
+			]
+		},
+		{
+			"name": "Axiomatic Steam Breath (Recharge 5-6)",
+			"entries": [
+				"The modronzilla exhales superheated, perfectly pressurized steam in a 60-foot cone. Each creature in that area must make a {@dc 20} Dexterity saving throw, taking 42 ({@damage 12d6}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	],
+	"legendaryHeader": [
+		"The modronzilla can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The modronzilla regains spent legendary actions at the start of its turn."
+	],
+	"legendaryActions": 3,
+	"legendary": [
+		{
+			"name": "Pendulum Attack",
+			"entries": [
+				"The modronzilla makes one Clockwork Pendulum attack."
+			]
+		},
+		{
+			"name": "Monodrone Deployment (Costs 2 Actions)",
+			"entries": [
+				"The modronzilla ejects a spherical cluster of monodrones at a point within 120 feet of it. Each creature within 20 feet of that point must make a {@dc 20} Dexterity saving throw, taking 14 ({@damage 4d6}) bludgeoning damage on a failure, or half as much damage on a success. Additionally, 3 ({@dice 1d4 + 1}) monodrones survive the impact, and land prone in unoccupied spaces within the area. These monodrones act on initiative count 1, following standard Mechanus protocols."
+			]
+		}
+	],
+	"mythicHeader": [
+		"If the modronzilla's Axiomatic Override trait has activated in the last hour, it can use the options below as legendary actions."
+	],
+	"mythic": [
+		{
+			"name": "Gyroscopic Takeoff",
+			"entries": [
+				"The modronzilla upregulates its clockwork engine. Each creature within 15 feet of the modronzilla must succeed on a {@dc 20} Dexterity saving throw or take 12 ({@damage 2d6 + 5}) fire damage and be knocked prone from exhaust vents. The modronzilla can then fly up to 60 feet and begin to hover using anti-gravitic rotation.",
+				"At the end of the next turn, the modronzilla lands. Each creature in the space where the modronzilla lands must make a {@dc 20} Strength saving throw. On a failed save, a creature takes 19 ({@damage 4d6 + 5}) bludgeoning damage and is knocked prone and restrained until the modronzilla moves out of the creature's space. Alternatively, the creature can use an action to make a {@dc 20} Strength ({@skill Athletics|PHB}) check, exiting prone in the nearest unoccupied space on a success. On a successful save, a creature takes half as much damage, is not knocked prone, and moves to the nearest unoccupied space."
+			]
+		},
+		{
+			"name": "Clockwork Overcharge (Costs 2 Actions)",
+			"entries": [
+				"The modronzilla recharges and uses its Axiomatic Steam Breath."
+			]
+		}
+	],
+	"legendaryGroup": {
+		"name": "Modronzilla",
+		"source": "HelianasGuidetoMonsterHunting"
+	},
+	"tokenHref": {
+		"type": "external",
+		"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HelianasGuidetoMonsterHunting/tokens/Koboldzilla.webp"
+	},
+	"altArt": [
+		{
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HelianasGuidetoMonsterHunting/tokens/topDown/Koboldzilla.webp"
+			},
+			"tokenTags": [
+				"topDown"
+			]
+		}
+	],
+	"hasToken": true,
+	"hasFluff": true,
+	"hasFluffImages": true
+},
+		{
 			"name": "Aleron",
 			"source": "SimbolisHomebrew",
 			"page": 163,
