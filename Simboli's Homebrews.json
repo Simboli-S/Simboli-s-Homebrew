@@ -17,6 +17,337 @@
 		]
 	},
 	"monster": [
+    {
+      "name": "The Cluster",
+      "isNamedCreature": true,
+      "source": "SimbolisHomebrew",
+      "page": 1,
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "construct",
+        "tags": [
+          "kaiju",
+          "mythic"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 25,
+          "from": [
+            "Aberrant Natural Armor"
+          ]
+        }
+      ],
+      "hp": {
+        "special": "300 (Chaos Threshold). See the Chaos Threshold & Vulnerable Areas trait below for additional, separate HP pools."
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 30,
+      "dex": 18,
+      "con": 30,
+      "int": 22,
+      "wis": 20,
+      "cha": 20,
+      "save": {
+        "str": "+18",
+        "con": "+18",
+        "int": "+14",
+        "wis": "+13",
+        "cha": "+13"
+      },
+      "skill": {
+        "perception": "+13",
+        "insight": "+13",
+        "intimidation": "+13"
+      },
+      "immune": [
+        "poison",
+        {
+          "special": "psychic (only while its Consortium Seals are intact; see below)"
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "passive": 23,
+      "languages": [
+        "Modron (Binary Shriek)",
+        "telepathy 120 ft."
+      ],
+      "cr": "30",
+      "trait": [
+        {
+          "name": "Aura of Paranoid Distortion",
+          "entries": [
+            "Any creature within 120 feet of The Cluster that attempts to cast a spell that restores hit points must first succeed on a DC 22 Charisma saving throw. On a failure, the spell fails and the spell slot is wasted."
+          ]
+        },
+        {
+          "name": "Kaiju Force",
+          "entries": [
+            "The Cluster can use an action to move through any object or magical barrier as though it were difficult terrain, destroying it in the process. In addition, it deals double damage to objects and structures, and its weapon attacks are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+          ]
+        },
+        {
+          "name": "Kaiju Fortitude",
+          "entries": [
+            "The Cluster is immune to any spell or effect that would alter its form or move it to another plane of existence against its will."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day, +3 Additional While in Rampage)",
+          "entries": [
+            "If The Cluster fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Crusader's Madness",
+          "entries": [
+            "The thousands of modrons inside consider every creature a demonic abomination. The Cluster has advantage on attack rolls against creatures that have dealt damage to its {@i Paranoid Hive}."
+          ]
+        },
+        {
+          "name": "Chaos Threshold & Vulnerable Areas",
+          "entries": [
+            "The Cluster's 300 HP Chaos Threshold and each Vulnerable Area's HP below are separate pools. Damage from an attack explicitly targeted at an area (requires a successful DC 16 check as a bonus action) is subtracted only from that area's HP. Damage from attacks that are not targeted at a specific area is subtracted only from the Chaos Threshold. A single attack cannot deplete both pools at once.",
+            {
+              "type": "table",
+              "caption": "Vulnerable Areas",
+              "colLabels": [
+                "Area",
+                "AC & HP",
+                "Targeting & Exploitation"
+              ],
+              "colStyles": [
+                "col-2",
+                "col-2",
+                "col-8"
+              ],
+              "rows": [
+                [
+                  "Mutated Ocular Complex (Easy)",
+                  "AC 22, HP 200",
+                  "Always exposed. If destroyed, The Cluster loses truesight, is blinded beyond 30 feet, loses the {@i Paranoid Purge Rays} action, and can no longer use its {@i Nullification Field} reaction."
+                ],
+                [
+                  "Consortium Seals (Prepared)",
+                  "AC 22, HP 150",
+                  "Takes damage exclusively from radiant or psychic sources. If destroyed, The Cluster's speed is halved, it loses the {@i Seal Discharge} legendary action, and it loses its immunity to psychic damage."
+                ],
+                [
+                  "The Paranoid Hive (Hidden)",
+                  "AC 22, HP 200",
+                  "Accessible only while The Cluster is in Rampage and its chest is open. Anyone starting their turn within 10 feet takes 21 ({@damage 6d6}) psychic damage. If destroyed, The Cluster enters Death Throes."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Behaviours",
+          "entries": [
+            {
+              "type": "table",
+              "caption": "Behaviours",
+              "colLabels": [
+                "Trigger",
+                "Effect"
+              ],
+              "colStyles": [
+                "col-3",
+                "col-9"
+              ],
+              "rows": [
+                [
+                  "Chaos Threshold reduced to 0",
+                  "{@b Rampage.} The Cluster's chest opens, revealing the Paranoid Hive, and it unleashes a psychic shockwave: all creatures within 60 feet must make a DC 25 Intelligence saving throw, taking 70 ({@damage 20d6}) psychic damage on a failed save, or half as much on a success. Positive magical conditions or buffs on those who fail are dispelled. The Cluster unlocks the {@i False Sun Beam} action and gains 3 additional uses of Legendary Resistance."
+                ],
+                [
+                  "Three Vulnerable Areas exploited",
+                  "{@b Death Throes.} The Cluster gains advantage on all melee attacks, but attack rolls against it score a critical hit on an 18-20. It can only be killed by a Finishing Blow: 150+ damage dealt to it in a single turn."
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Cluster makes three Slam attacks. If it is in a Rampage, it can replace one Slam with a {@i Paranoid Purge Rays} attack (if the Ocular Complex is not destroyed) or with {@i False Sun Beam}."
+          ]
+        },
+        {
+          "name": "Exorcism Slam",
+          "entries": [
+            "{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}36 ({@damage 4d12 + 10}) force damage plus 21 ({@damage 6d6}) radiant damage."
+          ]
+        },
+        {
+          "name": "Paranoid Purge Rays",
+          "entries": [
+            "The Cluster fires three magical eye rays from its stalks, choosing up to three targets within 120 feet.",
+            {
+              "type": "list",
+              "items": [
+                "{@b Repulsion Ray (rays 1-2).} DC 22 Dexterity saving throw or take 22 ({@damage 4d10}) force damage and be pushed back 30 feet.",
+                "{@b Ray of Erasure (ray 3).} DC 25 Constitution saving throw, taking 55 ({@damage 10d10}) force damage on a failed save, or half as much on a success. A creature reduced to 0 hit points by this damage is disintegrated; it can be restored to life only by {@spell true resurrection} or a {@spell wish} spell."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "False Sun Beam (Rampage Only, Recharge 5-6)",
+          "entries": [
+            "The Cluster unleashes a beam of corrupted divine light from its open chest. All creatures in a line 120 feet long and 20 feet wide must make a DC 25 Constitution saving throw. On a failed save, a creature takes 99 ({@damage 18d10}) radiant damage and is blinded for 1 minute. On a success, it takes half as much damage and isn't blinded."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Shake Off",
+          "entries": [
+            "Each creature mounted on The Cluster must succeed on a DC 22 Strength or Dexterity saving throw (target's choice) or be thrown off, landing prone in the nearest unoccupied space."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Nullification Field (Requires Intact Ocular Complex)",
+          "entries": [
+            "When a creature within 120 feet casts a spell, The Cluster can unleash an antimagic pulse. The spell fails and has no effect, functioning as a 9th-level {@spell counterspell}."
+          ]
+        }
+      ],
+      "legendaryHeader": [
+        "The Cluster can take 3 legendary actions, choosing from the options below. A Slam or Seal Discharge costs 1 action, while Lethal Gaze costs 2 actions and can only be used once per round. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The Cluster regains all expended legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Slam",
+          "entries": [
+            "The Cluster makes one Exorcism Slam attack."
+          ]
+        },
+        {
+          "name": "Seal Discharge",
+          "entries": [
+            "The Cluster releases a burst of corrupted arcane energy from its Consortium Seals. One creature within 30 feet must succeed on a DC 22 Wisdom saving throw or take 18 ({@damage 4d8}) psychic damage and have disadvantage on its next attack roll before the start of The Cluster's next turn. (Lost if the Consortium Seals are destroyed.)"
+          ]
+        },
+        {
+          "name": "Lethal Gaze",
+          "entries": [
+            "(1/Round.) The Cluster fires its {@i Ray of Erasure} at a single target. This legendary action recharges at the start of The Cluster's turn. (Lost if the Ocular Complex is destroyed.)"
+          ]
+        }
+      ],
+      "legendaryGroup": {
+        "name": "The Cluster",
+        "source": "SimbolisHomebrew"
+      },
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "TP",
+        "X"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "prone"
+      ],
+      "damageTags": [
+        "O",
+        "R",
+        "F",
+        "Y"
+      ],
+      "savingThrowForced": [
+        "strength",
+        "dexterity",
+        "constitution",
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "savingThrowForcedLegendary": [
+        "wisdom",
+        "constitution"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": ""
+      },
+      "environment": [
+        "outlands",
+        "rigus"
+      ]
+    }
+  ],
+  "legendaryGroup": [
+    {
+      "name": "The Cluster",
+      "source": "SimbolisHomebrew",
+      "lairActions": [
+        "On initiative count 20 (losing initiative ties), The Cluster takes a lair action to cause one of the following effects. It can't use the same effect two rounds in a row.",
+        {
+          "type": "list",
+          "items": [
+            "{@b Localized Gravity Inversion.} The Cluster violently reverses gravity on its surface to shake off attackers. Any creature mounted on it that is not currently braced must succeed on a DC 22 Strength or Dexterity saving throw or 'fall' 60 feet upward into the sky, taking 21 ({@damage 6d6}) force damage and remaining suspended until initiative count 20 of the next round, when it crashes back down.",
+            "{@b Rain of Molten Scrap.} Burning debris rains down from The Cluster's corrupted joints. All creatures within 120 feet must make a DC 22 Dexterity saving throw, taking 22 ({@damage 4d10}) fire damage and 22 ({@damage 4d10}) force damage on a failed save, or half as much on a success.",
+            "{@b Structural Collapse.} The Cluster smashes through a building or tower of Rigus as it advances. Choose a point within 60 feet of it; each creature within 20 feet of that point must succeed on a DC 22 Dexterity saving throw or take 27 ({@damage 6d8}) force damage and be knocked prone. The area becomes difficult terrain for the rest of the encounter."
+          ]
+        }
+      ],
+      "regionalEffects": [
+        "While The Cluster rampages through Rigus, the region is riddled with the effects of its passage:",
+        {
+          "type": "list",
+          "items": [
+            "Structures within 1 mile of The Cluster are subject to sudden structural failure at the DM's discretion, creating difficult terrain and falling debris hazards.",
+            "Modron-corrupted debris litters the streets; creatures searching it can find scraps of Consortium Sealwork, useful to those investigating the Sarta's involvement.",
+            "The screams and metallic shrieks of the Amalgam can be heard for miles, imposing disadvantage on Wisdom (Perception) checks that rely on hearing within 1 mile."
+          ]
+        }
+      ],
+      "regionalEffectsFade": "If The Cluster dies or leaves the region, these effects fade over the next 1d10 days."
+    }
+  ]
+
+	"monster": [
 		{
 			"name": "Senatore Horat",
 			"isNamedCreature": true,
